@@ -1,0 +1,50 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "PWA test",
+  "short_name": "PWA",
+  "icons": [
+    {
+      "src": "/icons/logo_32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo_48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo_64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo_72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo_96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo_128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo_256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "scope": ".",
+  "id": "natatshkin-pwa-test",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "blue",
+  "categories": ["lifestyle", "entertainment", "photo"]
+}
