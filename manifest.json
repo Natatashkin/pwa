@@ -1,8 +1,8 @@
 {
   "lang": "en",
   "dir": "ltr",
-  "name": "PWA test",
-  "short_name": "PWA",
+  "name": "Image Finder PWA",
+  "short_name": "ImageFinder",
   "icons": [
     {
       "src": "/icons/logo_32x32.png",
@@ -37,6 +37,11 @@
     {
       "src": "/icons/logo_256x256.png",
       "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/logo_512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
