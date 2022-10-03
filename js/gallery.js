@@ -1,8 +1,9 @@
 import { getRandomImages } from "./api.js";
 
-const markup = async () => {
-  const images = await getRandomImages();
-  const template = images
+const gallery = document.querySelector(".gallery");
+
+const renderMarkup = (items) => {
+  return items
     .map(({ webformatURL, likes, views, tags, downloads }) => {
       return `
       <li class="gallery-item">
@@ -36,16 +37,15 @@ const markup = async () => {
     `;
     })
     .join("");
-  return template;
 };
 
-const gallery = document.querySelector(".gallery");
-let galleryItems;
-
-try {
-  galleryItems = await markup();
-} catch (error) {
-  console.log(error);
-}
-
-gallery.insertAdjacentHTML("beforeend", galleryItems);
+export const renderGallery = async () => {
+  try {
+    const images = await getRandomImages();
+    const galleryMarkup = renderMarkup(images);
+    gallery.insertAdjacentHTML("beforeend", galleryMarkup);
+  } catch (error) {
+    return error;
+  }
+};
+await renderGallery();
