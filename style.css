@@ -21,12 +21,13 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  background-color: #ffffff;
 }
 
 header {
   position: relative;
   display: flex;
-  background-color: rgb(40, 109, 213);
+  background-color: #286dd5;
   padding: 10px 20px;
 }
 
@@ -67,8 +68,8 @@ header {
 .gallery-item {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  height: 400px;
+  width: 280px;
+  height: 280px;
   -webkit-box-shadow: 2px 5px 16px 0px rgb(40, 109, 213),
     5px 5px 6px 7px rgba(0, 0, 0, 0.04);
   box-shadow: 2px 5px 16px 0px rgb(40, 109, 213),
@@ -77,17 +78,36 @@ header {
   border-radius: 4px;
 }
 
+@media (min-width: 768px) {
+  .gallery-item {
+    width: 450px;
+    height: 400px;
+  }
+}
+
 .item-thumb {
-  width: 450px;
-  height: 300px;
+  width: 280px;
+  height: 180px;
   border-radius: 6px;
 }
 
 .item-thumb > img {
-  width: 450px;
-  height: 300px;
+  width: 280px;
+  height: 180px;
   border-radius: 4px;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .item-thumb {
+    width: 450px;
+    height: 300px;
+  }
+
+  .item-thumb > img {
+    width: 450px;
+    height: 300px;
+  }
 }
 
 .item-data {
